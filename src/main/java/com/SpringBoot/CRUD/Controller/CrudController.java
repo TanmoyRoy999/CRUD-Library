@@ -19,9 +19,13 @@ import com.SpringBoot.CRUD.Service.RestInterface;
 
 @RestController
 public class CrudController {
-	
-	@Autowired
+
 	RestInterface r;
+
+	@Autowired
+	public CrudController(RestInterface r) {
+		this.r = r;
+	}
 
 	@GetMapping
 	public String homePage() {
