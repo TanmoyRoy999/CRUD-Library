@@ -44,7 +44,7 @@ public class CrudController {
 	
 	/** 
 	 * alternate version of getBookById method
-	 * http://localhost:8080/greeting?id=3
+	 * http://localhost:8080/books?id=3
 	 * by default, it will fetch book with id=2
 	 *
 	 * @GetMapping("/books")
